@@ -24,7 +24,7 @@ body {
   padding:0;
   font-family: Helvetica;
   /*Background image with light grey curve.*/
-  background-color:#494949;
+  /* background-color:#494949; */
   background-repeat:no-repeat;
   background-position:right bottom;
   height:100%;
@@ -806,6 +806,8 @@ select:active {
 #noVNC_connect_button {
   cursor: pointer;
 
+  min-width: 170px;
+  width: 100%;
   padding: 10px;
 
   color: white;
@@ -905,7 +907,7 @@ select:active {
 #noVNC_container {
   width: 100%;
   height: 100%;
-  background-color: #313131;
+  /* background-color: #313131; */
   border-bottom-right-radius: 800px 600px;
   /*border-top-left-radius: 800px 600px;*/
 }
@@ -924,22 +926,32 @@ select:active {
 
 /*Default noVNC logo.*/
 /* From: http://fonts.googleapis.com/css?family=Orbitron:700 */
-@font-face {
+/* @font-face {
   font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
   src: local('?'), url('Orbitron700.woff') format('woff'),
                    url('Orbitron700.ttf') format('truetype');
-}
+} */
 
 .noVNC_logo {
-  color:yellow;
+  /* color:yellow;
   font-family: 'Orbitron', 'OrbitronTTF', sans-serif;
   line-height:90%;
-  text-shadow: 0.1em 0.1em 0 black;
+  text-shadow: 0.1em 0.1em 0 black; */
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 220px;
+  min-width: 170px;
 }
-.noVNC_logo span{
+/* .noVNC_logo span{
   color:green;
+} */
+#noVNC_control_bar_anchor .noVNC_logo {
+  height: 45px;
+  min-width: 35px;
+  background-size: 35px auto;
 }
 
 #noVNC_bell {
@@ -951,7 +963,7 @@ select:active {
  * ----------------------------------------
  */
 
-@media screen and (max-width: 640px){
+/* @media screen and (max-width: 640px){
   #noVNC_logo {
     font-size: 150px;
   }
@@ -967,4 +979,4 @@ select:active {
   #noVNC_logo {
     font-size: 90px;
   }
-}
+} */
