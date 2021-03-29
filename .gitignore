@@ -10,3 +10,6 @@ recordings
 *.swp
 *~
 noVNC-*.tgz
+prebuild/node_modules
+prebuild/dist
+prebuild/src
